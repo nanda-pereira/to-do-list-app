@@ -43,7 +43,7 @@ export default function HomeScreen({ navigation, route }) {
               onPress={() => navigation.navigate('ALLTASKS', { filter: 'completed', userId })}
             >
               <View style={styles.cardIconContainer}>
-                <Image source={require('../Assets/check.png')} style={styles.customIcon} />
+                <Image source={require('../assets/check.png')} style={styles.customIcon} />
               </View>
               <Text style={styles.cardText}>Concluídas</Text>
             </TouchableOpacity>
@@ -55,7 +55,7 @@ export default function HomeScreen({ navigation, route }) {
               onPress={() => navigation.navigate('ALLTASKS', { filter: 'pending', userId })}
             >
               <View style={styles.cardIconContainer}>
-                <Image source={require('../Assets/clock.png')} style={styles.customIcon} />
+                <Image source={require('../assets/clock.png')} style={styles.customIcon} />
               </View>
               <Text style={styles.cardText}>Pendentes</Text>
             </TouchableOpacity>
